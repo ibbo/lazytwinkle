@@ -1,0 +1,10 @@
+<p>Use the buttons below to switch the conservatory lights on/off</p>
+
+<form action="/lights/on" method="post">
+{% csrf_token %}
+    <button type="submit">Turn lights on</button>
+</form>
+<form action="/lights/off" method="post">
+{% csrf_token %}
+    <button type="submit">Turn lights off</button>
+</form>
