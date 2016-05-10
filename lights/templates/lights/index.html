@@ -1,5 +1,14 @@
-<p>Use the buttons below to switch the conservatory lights on/off</p>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
+<div data-role="page">
+<div data-role="header">
+<h2>Conservatory lights</h2>
+</div>
+
+<div role="main" class="ui-content">
 <form action="/lights/on" method="post">
 {% csrf_token %}
     <button type="submit">Turn lights on</button>
@@ -8,3 +17,5 @@
 {% csrf_token %}
     <button type="submit">Turn lights off</button>
 </form>
+</div>
+</div>
